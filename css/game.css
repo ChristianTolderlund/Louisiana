@@ -1,0 +1,85 @@
+.game-site {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10%;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 225px);
+  justify-content: center;
+}
+
+img {
+  border-radius: 90px;
+}
+.header-game {
+  text-align: center;
+}
+.task {
+  height: 250px;
+  width: 250px;
+}
+.childrengrid {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1vw;
+  margin: 1vw;
+  justify-content: center;
+}
+main .game-main {
+  display: block;
+}
+@media (max-width: 959px) {
+  .game-site {
+    margin-bottom: 40%;
+  }
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+  }
+  img {
+    height: 80%;
+    width: 70%;
+  }
+}
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(4, 125px);
+    grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
+    row-gap: 0;
+  }
+  img {
+    height: 80%;
+    width: 70%;
+  }
+  .game-site {
+    margin-bottom: 10%;
+  }
+}
+@media (max-width: 684px) {
+  .grid {
+    grid-template-columns: repeat(4, 75px);
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    row-gap: 0;
+  }
+  img {
+    height: 70%;
+    width: 60%;
+  }
+  .game-site {
+    margin-bottom: 10%;
+  }
+}
+@media (max-width: 527px) {
+  .grid {
+    grid-template-columns: repeat(4, 50px);
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    row-gap: 0;
+  }
+  img {
+    height: 70%;
+    width: 60%;
+  }
+  .game-site {
+    height: 40%;
+    margin-bottom: 10%;
+  }
+}

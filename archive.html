@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Louisiana</title>
+    <link rel="stylesheet" href="css/design.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="SHORTCUT ICON" href="image/ico.ico" type="image/x-icon" />
+    <link rel="ICON" href="image/ico.ico" type="image/ico" />
+    <meta name="robots" content="noindex,nofollow">
+    <script src="https://kea-alt-del.dk/2021/autumn/louisiana/login.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="header-nav">
+            <a class="logo" href="index.html"><img src="image/logo.svg" alt="Louisiana logo"></a>
+            <div id="menu-toggle" class="menu-btn">
+                <div class="menu-burger"></div>
+            </div>
+        </nav>
+
+        <nav id="side-nav">
+            <div class="dropdown">
+                <ul id="drop-list" class="drop-list">
+                    <li class="art"><a href="index.html">Artist of the day</a></li>
+                    <li class="chil"><a href="children.html">Childrens corner</a></li>
+                    <li class="dis"><a href="explore.html">Discover</a></li>
+                    <li class="arch"><a href="archive.html">Archive</a></li>
+                    <li class="log"><a href="#">Log in</a></li>
+                </ul>
+            </div>
+            <div class="search-bar-nav">
+                <form class="form" action="https://www.youtube.com" target="_blank" method="get">
+                    <input class="enter-nav" type="text" placeholder="Search..." />
+                    <button n class="search-btn" type="submit">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="archive_body">
+            <div class="filtering_menu">
+                <button type="button" class="collapsible">Artwork type</button>
+                <div class="content art_type">
+                    <input type="checkbox" id="painting" name="artwork_type" value="painting">
+                    <label for="painting">Painting</label><br>
+                    <input type="checkbox" id="sculpture" name="artwork_type" value="sculpture">
+                    <label for="sculpture"> Sculpture</label><br>
+                    <input type="checkbox" id="photograph" name="artwork_type" value="photograph">
+                    <label for="photograph"> Photograph</label><br>
+                    <input type="checkbox" id="installation" name="artwork_type" value="installation">
+                    <label for="installation"> Installation</label><br>
+                </div>
+                <button type="button" class="collapsible">Sort by year</button>
+                <div class="content">
+                    <input type="checkbox" id="descending_order" name="sort_by_year" value="descending_order">
+                    <label for="descending_order"> Descending order</label><br>
+                    <input type="checkbox" id="ascending_order" name="sort_by_year" value="ascending_order">
+                    <label for="ascending_order"> Ascending order</label><br>
+                </div>
+                <button type="button" class="collapsible">Artists</button>
+                <div class="content">
+                    <input type="checkbox" id="alberto_giacometti" name="artists" value="Alberto Giacometti">
+                    <label for="alberto_giacometti"> Alberto Giacometti</label><br>
+                    <input type="checkbox" id="alicja_kwade" name="artists" value="Alicja Kwade">
+                    <label for="alicja_kwade"> Alicja Kwade</label><br>
+                    <input type="checkbox" id="asger_jorn" name="artists" value="Asger Jorn">
+                    <label for="asger_jorn"> Asger Jorn</label><br>
+                    <input type="checkbox" id="henry_moore" name="artists" value="Henry Moore">
+                    <label for="henry_moore"> Henry Moore</label><br>
+                    <input type="checkbox" id="katherine_opie" name="artists" value="Katherine Opie">
+                    <label for="katherine_opie"> Katherine Opie</label><br>
+                    <input type="checkbox" id="william_kantridge" name="artists" value="William Kantridge">
+                    <label for="william_kantridge"> William Kantridge</label><br>
+                </div>
+            </div>
+
+
+            <div class="archive_content">
+                <template class="archive_template">
+                    <article class="archive_tile">
+                        <img src="http://via.placeholder.com/640x360" alt="" class="archive_tile_img">
+                        <div class="archive_tile_info">
+                            <h3 class="archive_tile_artist">Artist's name</h3>
+                            <h2 class="archive_tile_artwork">Artwork title</h2>
+                            <p class="artwork_date">2008</p>
+                            <p class="artwork_description">Oil on canvas</p>
+                            <p class="artwork_type">Painting</p>
+                        </div>
+                    </article>
+                </template>
+                <article class="archive_tile"></article>
+                <article class="archive_tile"></article>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="search-bar">
+            <p>Copyright: <br> Louisiana Museum of Modern Art <br> Louisiana Channel, Louisiana Museum of Modern Art,
+                2018 <br> Team 7: Christian Tolderlund, Lucian Aionicesei, Olivia Koch-Nielsen & Olivia Mosholm</p>
+            <form class="footer_form" action="https://www.youtube.com" target="_blank" method="get">
+                <input class="enter" type="text" placeholder="Search..." />
+                <button n class="search-btn" type="submit">
+                    <i class="fa fa-search"></i>
+                </button>
+            </form>
+        </div>
+        <div class="footer-links">
+            <h4 class="h4-footer">Go vist</h4>
+            <ul class="footer-ul">
+                <li>
+                    <a class="museum" href="https://louisiana.dk/" title="Louisiana Museum">Louisiana Museum</a>
+                </li>
+                <li>
+                    <a class="channel" href="https://channel.louisiana.dk/" title="Louisiana Channel">Louisiana
+                        Channel</a>
+                </li>
+                <li>
+                    <a class="webshop" href="https://butik.louisiana.dk/" title="Lousiana Webshop">Lousiana Webshop</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="js/archive.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
